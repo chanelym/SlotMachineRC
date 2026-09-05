@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slot Machine</title>
+  <link rel="stylesheet" href="slotMachine.css">
+</head>
+
+<body>
+
+  <div class="slot-machine">
+
+    <h1>Welcome to Vegas!</h1>
+
+
+
+     <div class="wallet">
+            <span>Wallet:<span>
+            <span id="wallet">$500</span>
+        </div>
+
+
+
+    <p>Let's bet! :</p>
+
+    <select id="bet">
+      <option value="5">$5</option>
+      <option value="15">$15</option>
+      <option value="25">$25</option>
+      <option value="35">$35</option>
+      <option value="50">$50</option>
+    </select>
+
+    <div class="reels">
+      <div class="reel" id="reelNumberOne">🍒</div>
+      <div class="reel" id="reelNumberTwo">🍀</div>
+      <div class="reel" id="reelNumberThree">🎲</div>
+    </div>
+
+    <button class="spinButton" onclick="spin()">SPIN</button>
+
+    <p id="message">Spin and win!</p>
+
+  </div>
+
+<script type="text/javascript" src="slotMachine.js"></script>
+
+</body>
+</html>
