@@ -9,20 +9,15 @@
 
 <body>
 
-  <div class="slot-machine">
-
+  <div class="slotMachine">
     <h1>Welcome to Vegas!</h1>
+  
+    <div class="wallet">
+      <span>Wallet<span>
+       <span id="wallet">$500</span>
+   </div>
 
-
-
-     <div class="wallet">
-            <span>Wallet:<span>
-            <span id="wallet">$500</span>
-        </div>
-
-
-
-    <p>Let's bet! :</p>
+    <p>Let's bet!</p>
 
     <select id="bet">
       <option value="5">$5</option>
@@ -39,9 +34,7 @@
     </div>
 
     <button class="spinButton" onclick="spin()">SPIN</button>
-
     <p id="message">Spin and win!</p>
-
   </div>
 
 <script type="text/javascript" src="slotMachine.js"></script>
