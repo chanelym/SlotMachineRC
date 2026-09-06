@@ -1,39 +1,38 @@
- let wallet = 500;
- let bet = 5;
+ let wallet= 500;
+ let bet= 5;
 
-    const symbols = ["🍒", "🍀", "🎲", "♠️", "🎰"];
-    function spin() {
-            let reelNumberOne = randomSymbol();
-            let reelNumberTwo = randomSymbol();
-            let reelNumberThree = randomSymbol();
+const symbols= ["🍒", "🍀", "🎲", "♠️", "🎰"];
+function spin(){      
+    let bet= document.getElementById("bet").value;
+    let reelNumberOne= randomSymbol();
+    let reelNumberTwo= randomSymbol();
+    let reelNumberThree= randomSymbol();
+  
+    wallet= wallet-bet;
+    updateWallet();
 
-        
-    wallet = wallet - bet;
+    function updateWallet(){
+    document.getElementById("wallet").innerHTML= wallet;
+}
+ 
+        document.getElementById("reelNumberOne").innerHTML= reelNumberOne;
+        document.getElementById("reelNumberTwo").innerHTML= reelNumberTwo;
+        document.getElementById("reelNumberThree").innerHTML= reelNumberThree;
 
-            updateWallet();
-
-            document.getElementById("reelNumberOne").textContent = reelNumberOne;
-            document.getElementById("reelNumberTwo").textContent = reelNumberTwo;
-            document.getElementById("reelNumberThree").textContent = reelNumberThree;
-
-        function randomSymbol() {
-
-            let randomNumber = Math.floor(Math.random() * symbols.length);
-             return symbols[randomNumber];
+    function randomSymbol(){
+        let randomNum= Math.floor(Math.random()*5);
+        return symbols[randomNum];
         }
         
-            if (reelNumberOne === reelNumberTwo && reelNumberTwo === reelNumberThree) {
-                let winningAmount = bet * 2;
+        if (reelNumberOne===reelNumberTwo && reelNumberTwo===reelNumberThree) {
+        let winningAmount= bet*2;
 
-                wallet = wallet + winningAmount;
-                updateWallet();
-                document.getElementById("message").textContent =
-                    "Yay! You won!";
-                } else {
-                document.getElementById("message").textContent =
-                    "Sorry, try again!";
-            }
-        }       
-         function updateWallet() {
-            
-         }
+        wallet= wallet+winningAmount;
+         updateWallet();
+
+        document.getElementById("message").innerHTML="Yay! You won!";      
+         }else{
+        document.getElementById("message").innerHTML="Sorry! You lose!";       
+        }
+     }       
+    
