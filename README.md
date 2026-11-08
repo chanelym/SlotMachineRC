@@ -1,24 +1,40 @@
-# 🎰 Week05 Bootcamp2019 Project: Slot Machine
+# Slot Machine Game
 
-### Goal: Build a Simple Slot Machine
+The Slot Machine Game is a simple interactive web application that allows users to play a virtual slot machine. The game features three reels, each containing at least five possible symbols. Users can choose to place a minimum or maximum bet, spin the reels, and see whether they win based on the results.
 
-Build a simple slot machine with minimum 5 items per reel and 3 reels - user should be able to bet min or max and have their total update
+The game keeps track of the user's total balance and updates it after each spin based on the outcome.
 
-### How to submit your code for review:
+## Features
+Three Reels: Play using three spinning reels with multiple possible symbols.
+Randomized Results: Generate random combinations each time the reels spin.
+Minimum Bet: Choose to place the minimum bet before spinning.
+Maximum Bet: Choose to place the maximum bet before spinning.
+Balance Tracking: Keep track of the user's total balance.
+Win and Loss Results: Update the user's balance based on the outcome of each spin.
+Interactive Gameplay: Use buttons to place bets and spin the slot machine.
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## Tech Stack
+Frontend: HTML, CSS, JavaScript
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+## What I Learned
+Using JavaScript to create interactive games.
+Working with arrays to store and organize reel symbols.
+Generating random outcomes using JavaScript.
+Handling button clicks and user interactions.
+Using conditional statements to determine winning combinations.
+Managing game state and tracking the user's balance.
+Updating the DOM dynamically to display game results.
+Working with basic game logic and calculations.
+
+## Installation
+Fork and clone the repository.
+Navigate to the project directory.
+
+## Usage
+Open the index.html file in your browser.
+Choose either the minimum or maximum bet.
+Spin the three reels.
+View the symbols generated on each reel.
+Check whether your combination results in a win or loss.
+Watch your total balance update after each spin.
+Continue playing as long as you have a remaining balance!
