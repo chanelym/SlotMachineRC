@@ -4,6 +4,9 @@ The Slot Machine Game is a simple interactive web application that allows users 
 
 The game keeps track of the user's total balance and updates it after each spin based on the outcome.
 
+<img width="1766" height="908" alt="Screenshot 2026-11-09 at 1 30 08 AM" src="https://github.com/user-attachments/assets/9aca78d5-fa1f-4fb1-a74f-d3d1cde36f19" />
+
+
 ## Features
 Three Reels: Play using three spinning reels with multiple possible symbols.
 Randomized Results: Generate random combinations each time the reels spin.
